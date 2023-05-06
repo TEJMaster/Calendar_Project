@@ -1,0 +1,1599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/Users/kevinsun/IdeaProjects/group_0031/phase2/src</OriginalElement>
+  <nodes>
+    <node x="3429.813889221898" y="1492.0">SendMail.EmailSender</node>
+    <node x="2168.2305558885646" y="938.0">TextUI.CalendarCreator</node>
+    <node x="2870.765476190476" y="938.0">TextUI.CalendarUpdatingSystem</node>
+    <node x="3144.765476190476" y="938.0">TextUI.ActivityManagementSystem</node>
+    <node x="1433.563889221898" y="524.0">User.UserManager</node>
+    <node x="2779.5542041292133" y="746.0">Calendar.CalendarSystem</node>
+    <node x="1649.188889221898" y="422.0">Data.InformationReader</node>
+    <node x="3438.765476190476" y="524.0">Authentication.PasswordValidator</node>
+    <node x="2403.563889221898" y="422.0">Activity.ActivityManager</node>
+    <node x="1590.1055558885646" y="1778.0">TextUI.StartSystem</node>
+    <node x="413.0958707958798" y="422.0">Messages.RespondMessage</node>
+    <node x="1915.563889221898" y="524.0">Template.TemplateManager</node>
+    <node x="1915.9817798867894" y="1310.0">TextUI.CalendarViewer</node>
+    <node x="756.6375374625466" y="290.0">User.TemporaryUser</node>
+    <node x="2003.563889221898" y="422.0">Template.Template</node>
+    <node x="774.0734465534559" y="186.0">User.RegularUser</node>
+    <node x="47.5" y="938.0">Messages.AdminMessageObserver</node>
+    <node x="192.5625" y="92.0">Messages.Observer</node>
+    <node x="1593.6651132201225" y="1646.0">Authentication.LoginSystem</node>
+    <node x="3597.765476190476" y="938.0">Authentication.UserNameValidator</node>
+    <node x="339.3888892218979" y="1310.0">Messages.MessagingSystem</node>
+    <node x="225.26253746254656" y="186.0">Messages.Messages</node>
+    <node x="3431.313889221898" y="1310.0">SendMail.JavaMailUtil</node>
+    <node x="1627.1484465534559" y="1492.0">TextUI.MainMenuSystem</node>
+    <node x="2605.563889221898" y="290.0">Calendar.TimeTable</node>
+    <node x="308.87340909090926" y="0.0">Messages.AdminMessageManager</node>
+    <node x="3638.765476190476" y="422.0">Authentication.Validator</node>
+    <node x="3204.313889221898" y="1310.0">Authentication.RegistrationSystem</node>
+    <node x="2683.175" y="422.0">Calendar.CalendarFactory</node>
+    <node x="437.26253746254656" y="938.0">Messages.RespondMessageObserver</node>
+    <node x="2756.563889221898" y="290.0">Calendar.DateCalendar</node>
+    <node x="3108.7667001887007" y="186.0">Calendar.Calendar</node>
+    <node x="2129.563889221898" y="524.0">Template.BasicQuestionListIterator</node>
+    <node x="2643.032142857143" y="524.0">Calendar.CalendarManager</node>
+    <node x="1115.6095573315579" y="1310.0">TextUI.ModifyTemplateSystem</node>
+    <node x="2263.813889221898" y="422.0">Template.Iterator</node>
+    <node x="2519.6762239982245" y="92.0">Activity.Activity</node>
+    <node x="1417.3428906648912" y="92.0">User.TrialUser</node>
+    <node x="1597.1055558885646" y="1858.0">DemoMain</node>
+    <node x="2486.282142857143" y="746.0">Data.InformationSaver</node>
+    <node x="2004.2305558885646" y="938.0">TextUI.QuitSystem</node>
+    <node x="1664.438889221898" y="746.0">User.UserSystem</node>
+    <node x="488.25" y="290.0">Messages.AdminMessage</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="TextUI.StartSystem" target="Authentication.RegistrationSystem" relationship="TO_ONE">
+      <point x="69.23076923076928" y="-15.0" />
+      <point x="1734.3363251193339" y="1757.0" />
+      <point x="3318.813889221898" y="1757.0" />
+      <point x="3318.813889221898" y="1471.0" />
+      <point x="3376.813889221898" y="1471.0" />
+      <point x="69.0" y="15.0" />
+    </edge>
+    <edge source="User.UserManager" target="User.TrialUser" relationship="CREATE">
+      <point x="19.75" y="-15.0" />
+      <point x="1532.313889221898" y="164.0" />
+      <point x="1556.6067798867894" y="164.0" />
+      <point x="1556.6067798867894" y="144.0" />
+      <point x="1478.8428906648912" y="144.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Data.InformationSaver" target="User.UserManager" relationship="TO_ONE">
+      <point x="-70.49999999999994" y="-15.0" />
+      <point x="2509.782142857143" y="665.0" />
+      <point x="1729.188889221898" y="665.0" />
+      <point x="1729.188889221898" y="655.0" />
+      <point x="1552.063889221898" y="655.0" />
+      <point x="39.5" y="15.0" />
+    </edge>
+    <edge source="Messages.AdminMessageObserver" target="Messages.AdminMessage" relationship="DEPENDENCY">
+      <point x="49.200000000000045" y="-15.0" />
+      <point x="219.70000000000005" y="877.0" />
+      <point x="658.5958707958798" y="877.0" />
+      <point x="658.5958707958798" y="391.0" />
+      <point x="618.0" y="391.0" />
+      <point x="43.25" y="15.0" />
+    </edge>
+    <edge source="Messages.RespondMessageObserver" target="Messages.Messages" relationship="DEPENDENCY">
+      <point x="-66.5" y="-15.0" />
+      <point x="503.76253746254656" y="857.0" />
+      <point x="304.0" y="857.0" />
+      <point x="304.0" y="258.0" />
+      <point x="258.26253746254656" y="258.0" />
+      <point x="-33.0" y="15.0" />
+    </edge>
+    <edge source="Authentication.LoginSystem" target="TextUI.MainMenuSystem" relationship="CREATE">
+      <point x="-10.266666666666652" y="-15.0" />
+      <point x="1660.3984465534559" y="1544.0" />
+      <point x="1675.1484465534559" y="1544.0" />
+      <point x="-48.0" y="15.0" />
+    </edge>
+    <edge source="Messages.RespondMessage" target="Messages.AdminMessage" relationship="DEPENDENCY">
+      <point x="64.33333333333337" y="-15.0" />
+      <point x="573.9292041292133" y="401.0" />
+      <point x="658.5958707958798" y="401.0" />
+      <point x="658.5958707958798" y="391.0" />
+      <point x="618.0" y="391.0" />
+      <point x="43.25" y="15.0" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="TextUI.CalendarCreator" relationship="TO_ONE">
+      <point x="14.399999999999977" y="-15.0" />
+      <point x="1737.548446553456" y="1361.0" />
+      <point x="1593.0678906648914" y="1361.0" />
+      <point x="1593.0678906648914" y="1099.0" />
+      <point x="2305.4805558885646" y="1099.0" />
+      <point x="45.75" y="15.0" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="User.UserSystem" relationship="DEPENDENCY">
+      <point x="-33.599999999999966" y="-15.0" />
+      <point x="1689.548446553456" y="1411.0" />
+      <point x="1105.1095573315579" y="1411.0" />
+      <point x="1105.1095573315579" y="1289.0" />
+      <point x="1188.3" y="1289.0" />
+      <point x="1188.3" y="907.0" />
+      <point x="1464.0609090909093" y="907.0" />
+      <point x="1464.0609090909093" y="797.0" />
+      <point x="1775.438889221898" y="797.0" />
+      <point x="37.0" y="15.0" />
+    </edge>
+    <edge source="Messages.Observer" target="Messages.Messages" relationship="DEPENDENCY">
+      <point x="15.625" y="15.0" />
+      <point x="270.6875" y="164.0" />
+      <point x="274.76253746254656" y="164.0" />
+      <point x="-16.5" y="-15.0" />
+    </edge>
+    <edge source="Messages.Messages" target="Messages.Observer" relationship="DEPENDENCY">
+      <point x="16.5" y="-15.0" />
+      <point x="307.76253746254656" y="164.0" />
+      <point x="301.9375" y="164.0" />
+      <point x="46.875" y="15.0" />
+    </edge>
+    <edge source="TextUI.ActivityManagementSystem" target="Calendar.CalendarSystem" relationship="DEPENDENCY">
+      <point x="-91.0" y="-15.0" />
+      <point x="3190.265476190476" y="877.0" />
+      <point x="2876.0542041292133" y="877.0" />
+      <point x="2876.0542041292133" y="867.0" />
+      <point x="2916.0542041292133" y="867.0" />
+      <point x="45.5" y="15.0" />
+    </edge>
+    <edge source="TextUI.CalendarViewer" target="User.TrialUser" relationship="DEPENDENCY">
+      <point x="-51.625" y="-15.0" />
+      <point x="1952.8567798867894" y="1019.0" />
+      <point x="1657.938889221898" y="1019.0" />
+      <point x="1657.938889221898" y="817.0" />
+      <point x="1423.063889221898" y="817.0" />
+      <point x="1423.063889221898" y="381.0" />
+      <point x="1477.688889221898" y="381.0" />
+      <point x="1477.688889221898" y="164.0" />
+      <point x="1556.6067798867894" y="164.0" />
+      <point x="1556.6067798867894" y="144.0" />
+      <point x="1478.8428906648912" y="144.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Messages.RespondMessage" target="Messages.AdminMessage" relationship="TO_MANY">
+      <point x="0.0" y="-15.0" />
+      <point x="509.5958707958798" y="401.0" />
+      <point x="531.5" y="401.0" />
+      <point x="-43.25" y="15.0" />
+    </edge>
+    <edge source="Messages.MessagingSystem" target="Messages.RespondMessage" relationship="CREATE">
+      <point x="21.77777777777783" y="-15.0" />
+      <point x="459.1666669996757" y="1239.0" />
+      <point x="426.76253746254656" y="1239.0" />
+      <point x="426.76253746254656" y="503.0" />
+      <point x="509.5958707958798" y="503.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Messages.Messages" target="Messages.AdminMessageManager" relationship="DEPENDENCY">
+      <point x="49.5" y="-15.0" />
+      <point x="340.76253746254656" y="164.0" />
+      <point x="345.0" y="164.0" />
+      <point x="345.0" y="71.0" />
+      <point x="266.24840909090926" y="71.0" />
+      <point x="266.24840909090926" y="51.0" />
+      <point x="399.62340909090926" y="51.0" />
+      <point x="-30.25" y="15.0" />
+    </edge>
+    <edge source="TextUI.CalendarUpdatingSystem" target="Calendar.CalendarSystem" relationship="DEPENDENCY">
+      <point x="-1.4210854715202004E-14" y="-15.0" />
+      <point x="2997.765476190476" y="877.0" />
+      <point x="2876.0542041292133" y="877.0" />
+      <point x="2876.0542041292133" y="867.0" />
+      <point x="2916.0542041292133" y="867.0" />
+      <point x="45.5" y="15.0" />
+    </edge>
+    <edge source="Activity.ActivityManager" target="Activity.Activity" relationship="TO_MANY">
+      <point x="-45.25" y="-15.0" />
+      <point x="2448.813889221898" y="351.0" />
+      <point x="2384.3" y="351.0" />
+      <point x="2384.3" y="154.0" />
+      <point x="2547.6762239982245" y="154.0" />
+      <point x="-28.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="TextUI.CalendarViewer" relationship="TO_ONE">
+      <point x="62.39999999999998" y="-15.0" />
+      <point x="1785.548446553456" y="1441.0" />
+      <point x="2048.7317798867894" y="1441.0" />
+      <point x="44.25" y="15.0" />
+    </edge>
+    <edge source="Messages.Messages" target="Messages.Observer" relationship="TO_MANY">
+      <point x="-49.5" y="-15.0" />
+      <point x="241.76253746254656" y="164.0" />
+      <point x="148.5" y="164.0" />
+      <point x="148.5" y="154.0" />
+      <point x="208.1875" y="154.0" />
+      <point x="-46.875" y="15.0" />
+    </edge>
+    <edge source="Messages.RespondMessageObserver" target="Messages.Observer" relationship="REALIZATION">
+      <point x="-110.83333333333326" y="-15.0" />
+      <point x="459.4292041292133" y="867.0" />
+      <point x="159.5" y="867.0" />
+      <point x="159.5" y="144.0" />
+      <point x="239.4375" y="144.0" />
+      <point x="-15.625" y="15.0" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="TextUI.ModifyTemplateSystem" relationship="TO_ONE">
+      <point x="-24.0" y="-15.0" />
+      <point x="1699.1484465534559" y="1401.0" />
+      <point x="1174.3595573315579" y="1401.0" />
+      <point x="-58.75" y="15.0" />
+    </edge>
+    <edge source="User.UserManager" target="User.TrialUser" relationship="TO_MANY">
+      <point x="59.25" y="-15.0" />
+      <point x="1571.813889221898" y="503.0" />
+      <point x="1567.188889221898" y="503.0" />
+      <point x="1567.188889221898" y="351.0" />
+      <point x="2140.842890664891" y="351.0" />
+      <point x="2140.842890664891" y="154.0" />
+      <point x="1519.8428906648912" y="154.0" />
+      <point x="41.0" y="15.0" />
+    </edge>
+    <edge source="Calendar.DateCalendar" target="Calendar.Calendar" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="2836.563889221898" y="268.0" />
+      <point x="2747.8012239982245" y="268.0" />
+      <point x="2747.8012239982245" y="258.0" />
+      <point x="3129.2667001887007" y="258.0" />
+      <point x="-41.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.CalendarCreator" target="Calendar.CalendarSystem" relationship="DEPENDENCY">
+      <point x="73.19999999999999" y="-15.0" />
+      <point x="2332.9305558885644" y="877.0" />
+      <point x="2876.0542041292133" y="877.0" />
+      <point x="2876.0542041292133" y="867.0" />
+      <point x="2916.0542041292133" y="867.0" />
+      <point x="45.5" y="15.0" />
+    </edge>
+    <edge source="Template.BasicQuestionListIterator" target="Template.Iterator" relationship="REALIZATION">
+      <point x="63.25" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Calendar.CalendarFactory" target="Calendar.DateCalendar" relationship="CREATE">
+      <point x="0.0" y="-15.0" />
+      <point x="2774.675" y="391.0" />
+      <point x="2695.4262239982245" y="391.0" />
+      <point x="2695.4262239982245" y="371.0" />
+      <point x="2836.563889221898" y="371.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.CalendarCreator" target="User.UserSystem" relationship="TO_ONE">
+      <point x="-73.19999999999996" y="-15.0" />
+      <point x="2186.530555888565" y="917.0" />
+      <point x="1177.3" y="917.0" />
+      <point x="1177.3" y="807.0" />
+      <point x="1701.438889221898" y="807.0" />
+      <point x="-37.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="Data.InformationSaver" relationship="DEPENDENCY">
+      <point x="33.60000000000002" y="-15.0" />
+      <point x="1756.7484465534558" y="1411.0" />
+      <point x="1847.598446553456" y="1411.0" />
+      <point x="1847.598446553456" y="1119.0" />
+      <point x="2600.3667001887006" y="1119.0" />
+      <point x="2600.3667001887006" y="867.0" />
+      <point x="2627.282142857143" y="867.0" />
+      <point x="47.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.QuitSystem" target="Data.InformationSaver" relationship="DEPENDENCY">
+      <point x="20.571428571428555" y="-15.0" />
+      <point x="2096.801984459993" y="897.0" />
+      <point x="2600.3667001887006" y="897.0" />
+      <point x="2600.3667001887006" y="867.0" />
+      <point x="2627.282142857143" y="867.0" />
+      <point x="47.0" y="15.0" />
+    </edge>
+    <edge source="Messages.AdminMessageObserver" target="Messages.Observer" relationship="REALIZATION">
+      <point x="-49.200000000000045" y="-15.0" />
+      <point x="121.29999999999995" y="917.0" />
+      <point x="159.5" y="917.0" />
+      <point x="159.5" y="144.0" />
+      <point x="239.4375" y="144.0" />
+      <point x="-15.625" y="15.0" />
+    </edge>
+    <edge source="TextUI.CalendarViewer" target="TextUI.QuitSystem" relationship="DEPENDENCY">
+      <point x="-36.875" y="-15.0" />
+      <point x="1967.6067798867894" y="1289.0" />
+      <point x="1486.4428906648914" y="1289.0" />
+      <point x="1486.4428906648914" y="999.0" />
+      <point x="2112.2305558885646" y="999.0" />
+      <point x="36.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="TextUI.QuitSystem" relationship="DEPENDENCY">
+      <point x="-4.7999999999999545" y="-15.0" />
+      <point x="1718.348446553456" y="1381.0" />
+      <point x="1486.4428906648914" y="1381.0" />
+      <point x="1486.4428906648914" y="999.0" />
+      <point x="2112.2305558885646" y="999.0" />
+      <point x="36.0" y="15.0" />
+    </edge>
+    <edge source="User.UserSystem" target="User.UserManager" relationship="TO_ONE">
+      <point x="-9.25" y="-15.0" />
+      <point x="1729.188889221898" y="655.0" />
+      <point x="1552.063889221898" y="655.0" />
+      <point x="39.5" y="15.0" />
+    </edge>
+    <edge source="Authentication.LoginSystem" target="Data.InformationSaver" relationship="DEPENDENCY">
+      <point x="10.266666666666652" y="-15.0" />
+      <point x="1680.9317798867892" y="1564.0" />
+      <point x="1883.198446553456" y="1564.0" />
+      <point x="1883.198446553456" y="1129.0" />
+      <point x="2636.8167001887005" y="1129.0" />
+      <point x="2636.8167001887005" y="897.0" />
+      <point x="2600.3667001887006" y="897.0" />
+      <point x="2600.3667001887006" y="867.0" />
+      <point x="2627.282142857143" y="867.0" />
+      <point x="47.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.CalendarViewer" target="Activity.Activity" relationship="DEPENDENCY">
+      <point x="81.125" y="-15.0" />
+      <point x="2085.6067798867894" y="1279.0" />
+      <point x="3812.2654761904764" y="1279.0" />
+      <point x="3812.2654761904764" y="164.0" />
+      <point x="2670.4262239982245" y="164.0" />
+      <point x="2670.4262239982245" y="154.0" />
+      <point x="2603.6762239982245" y="154.0" />
+      <point x="28.0" y="15.0" />
+    </edge>
+    <edge source="Data.InformationReader" target="Calendar.Calendar" relationship="DEPENDENCY">
+      <point x="37.3125" y="-15.0" />
+      <point x="1786.001389221898" y="381.0" />
+      <point x="2927.063889221898" y="381.0" />
+      <point x="2927.063889221898" y="268.0" />
+      <point x="3147.515476190476" y="268.0" />
+      <point x="3147.515476190476" y="258.0" />
+      <point x="3170.2667001887007" y="258.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Authentication.RegistrationSystem" target="Authentication.UserNameValidator" relationship="CREATE">
+      <point x="51.75" y="-15.0" />
+      <point x="3359.563889221898" y="1259.0" />
+      <point x="3648.765476190476" y="1259.0" />
+      <point x="-51.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="Messages.MessagingSystem" relationship="TO_ONE">
+      <point x="-81.59999999999994" y="-15.0" />
+      <point x="1641.548446553456" y="1461.0" />
+      <point x="486.3888892218979" y="1461.0" />
+      <point x="49.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.StartSystem" target="TextUI.QuitSystem" relationship="TO_ONE">
+      <point x="-23.076923076923094" y="-15.0" />
+      <point x="1642.0286328116415" y="1717.0" />
+      <point x="1391.1095573315579" y="1717.0" />
+      <point x="1391.1095573315579" y="1059.0" />
+      <point x="2040.2305558885646" y="1059.0" />
+      <point x="-36.0" y="15.0" />
+    </edge>
+    <edge source="Messages.MessagingSystem" target="Data.InformationReader" relationship="DEPENDENCY">
+      <point x="87.11111111111109" y="-15.0" />
+      <point x="524.500000333009" y="1289.0" />
+      <point x="1083.1095573315579" y="1289.0" />
+      <point x="1083.1095573315579" y="857.0" />
+      <point x="1653.938889221898" y="857.0" />
+      <point x="1653.938889221898" y="503.0" />
+      <point x="1752.2317798867891" y="503.0" />
+      <point x="1752.2317798867891" y="493.0" />
+      <point x="1798.438889221898" y="493.0" />
+      <point x="49.75" y="15.0" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="TextUI.CalendarUpdatingSystem" relationship="TO_ONE">
+      <point x="72.0" y="-15.0" />
+      <point x="1795.1484465534559" y="1451.0" />
+      <point x="2145.9817798867894" y="1451.0" />
+      <point x="2145.9817798867894" y="999.0" />
+      <point x="2934.265476190476" y="999.0" />
+      <point x="-63.5" y="15.0" />
+    </edge>
+    <edge source="Calendar.CalendarManager" target="Calendar.Calendar" relationship="TO_MANY">
+      <point x="82.28571428571422" y="-15.0" />
+      <point x="2821.317857142857" y="503.0" />
+      <point x="2938.063889221898" y="503.0" />
+      <point x="2938.063889221898" y="401.0" />
+      <point x="3708.09587079588" y="401.0" />
+      <point x="3708.09587079588" y="258.0" />
+      <point x="3211.2667001887007" y="258.0" />
+      <point x="41.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.CalendarViewer" target="TextUI.CalendarUpdatingSystem" relationship="TO_ONE">
+      <point x="7.375" y="-15.0" />
+      <point x="2011.8567798867894" y="1069.0" />
+      <point x="2145.9817798867894" y="1069.0" />
+      <point x="2145.9817798867894" y="999.0" />
+      <point x="2934.265476190476" y="999.0" />
+      <point x="-63.5" y="15.0" />
+    </edge>
+    <edge source="Messages.AdminMessage" target="Messages.Messages" relationship="GENERALIZATION">
+      <point x="-57.666666666666515" y="-15.0" />
+      <point x="517.0833333333335" y="268.0" />
+      <point x="315.0" y="268.0" />
+      <point x="315.0" y="258.0" />
+      <point x="324.26253746254656" y="258.0" />
+      <point x="33.0" y="15.0" />
+    </edge>
+    <edge source="Messages.Observer" target="Messages.AdminMessageManager" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.0" />
+      <point x="255.0625" y="71.0" />
+      <point x="266.24840909090926" y="71.0" />
+      <point x="266.24840909090926" y="51.0" />
+      <point x="399.62340909090926" y="51.0" />
+      <point x="-30.25" y="15.0" />
+    </edge>
+    <edge source="Calendar.CalendarSystem" target="Calendar.CalendarManager" relationship="CREATE">
+      <point x="26.0" y="-15.0" />
+      <point x="2896.5542041292133" y="715.0" />
+      <point x="2783.2119382839387" y="715.0" />
+      <point x="2783.2119382839387" y="575.0" />
+      <point x="2787.032142857143" y="575.0" />
+      <point x="48.0" y="15.0" />
+    </edge>
+    <edge source="User.UserSystem" target="Template.TemplateManager" relationship="TO_ONE">
+      <point x="27.75" y="-15.0" />
+      <point x="1766.188889221898" y="705.0" />
+      <point x="1893.063889221898" y="705.0" />
+      <point x="1893.063889221898" y="585.0" />
+      <point x="2060.313889221898" y="585.0" />
+      <point x="48.25" y="15.0" />
+    </edge>
+    <edge source="Template.TemplateManager" target="Template.Template" relationship="TO_ONE">
+      <point x="0.0" y="-15.0" />
+      <point x="2012.063889221898" y="503.0" />
+      <point x="2034.563889221898" y="503.0" />
+      <point x="-31.0" y="15.0" />
+    </edge>
+    <edge source="User.UserSystem" target="Authentication.PasswordValidator" relationship="CREATE">
+      <point x="64.75" y="-15.0" />
+      <point x="1803.188889221898" y="695.0" />
+      <point x="3576.265476190476" y="695.0" />
+      <point x="3576.265476190476" y="685.0" />
+      <point x="3488.265476190476" y="685.0" />
+      <point x="-49.5" y="15.0" />
+    </edge>
+    <edge source="TextUI.CalendarViewer" target="User.UserSystem" relationship="TO_ONE">
+      <point x="-81.125" y="-15.0" />
+      <point x="1923.3567798867894" y="1039.0" />
+      <point x="1177.3" y="1039.0" />
+      <point x="1177.3" y="807.0" />
+      <point x="1701.438889221898" y="807.0" />
+      <point x="-37.0" y="15.0" />
+    </edge>
+    <edge source="Data.InformationReader" target="Messages.AdminMessage" relationship="CREATE">
+      <point x="-87.0625" y="-15.0" />
+      <point x="1661.626389221898" y="401.0" />
+      <point x="658.5958707958798" y="401.0" />
+      <point x="658.5958707958798" y="391.0" />
+      <point x="618.0" y="391.0" />
+      <point x="43.25" y="15.0" />
+    </edge>
+    <edge source="TextUI.CalendarViewer" target="Calendar.CalendarSystem" relationship="TO_ONE">
+      <point x="-22.125" y="-15.0" />
+      <point x="1982.3567798867894" y="1159.0" />
+      <point x="2750.265476190476" y="1159.0" />
+      <point x="2750.265476190476" y="867.0" />
+      <point x="2825.0542041292133" y="867.0" />
+      <point x="-45.5" y="15.0" />
+    </edge>
+    <edge source="Messages.AdminMessageManager" target="Messages.AdminMessage" relationship="DEPENDENCY">
+      <point x="90.75" y="15.0" />
+      <point x="520.6234090909093" y="61.0" />
+      <point x="2151.842890664891" y="61.0" />
+      <point x="2151.842890664891" y="258.0" />
+      <point x="632.4166666666665" y="258.0" />
+      <point x="57.666666666666515" y="-15.0" />
+    </edge>
+    <edge source="Authentication.PasswordValidator" target="Authentication.Validator" relationship="REALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="3537.765476190476" y="503.0" />
+      <point x="3699.765476190476" y="503.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Messages.MessagingSystem" target="Messages.RespondMessageObserver" relationship="CREATE">
+      <point x="43.55555555555554" y="-15.0" />
+      <point x="480.94444477745355" y="1269.0" />
+      <point x="570.2625374625466" y="1269.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.CalendarViewer" target="TextUI.ActivityManagementSystem" relationship="TO_ONE">
+      <point x="36.875" y="-15.0" />
+      <point x="2041.3567798867894" y="1209.0" />
+      <point x="3213.0154761904764" y="1209.0" />
+      <point x="-68.25" y="15.0" />
+    </edge>
+    <edge source="TextUI.StartSystem" target="Authentication.LoginSystem" relationship="TO_ONE">
+      <point x="0.0" y="-15.0" />
+      <point x="1665.1055558885646" y="1697.0" />
+      <point x="1632.1651132201225" y="1697.0" />
+      <point x="-38.5" y="15.0" />
+    </edge>
+    <edge source="Template.TemplateManager" target="Template.Template" relationship="CREATE">
+      <point x="64.33333333333337" y="-15.0" />
+      <point x="2076.3972225552316" y="503.0" />
+      <point x="2119.063889221898" y="503.0" />
+      <point x="2119.063889221898" y="493.0" />
+      <point x="2096.563889221898" y="493.0" />
+      <point x="31.0" y="15.0" />
+    </edge>
+    <edge source="Calendar.CalendarFactory" target="Calendar.TimeTable" relationship="CREATE">
+      <point x="-61.0" y="-15.0" />
+      <point x="2713.675" y="401.0" />
+      <point x="2661.675" y="401.0" />
+      <point x="2661.675" y="371.0" />
+      <point x="2671.063889221898" y="371.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Data.InformationSaver" target="Activity.ActivityManager" relationship="TO_ONE">
+      <point x="39.16666666666663" y="-15.0" />
+      <point x="2619.4488095238094" y="615.0" />
+      <point x="2499.563889221898" y="615.0" />
+      <point x="2499.563889221898" y="493.0" />
+      <point x="2539.313889221898" y="493.0" />
+      <point x="45.25" y="15.0" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="Calendar.CalendarSystem" relationship="DEPENDENCY">
+      <point x="43.19999999999999" y="-15.0" />
+      <point x="1766.348446553456" y="1421.0" />
+      <point x="1905.4817798867894" y="1421.0" />
+      <point x="1905.4817798867894" y="1169.0" />
+      <point x="2761.265476190476" y="1169.0" />
+      <point x="2761.265476190476" y="877.0" />
+      <point x="2876.0542041292133" y="877.0" />
+      <point x="2876.0542041292133" y="867.0" />
+      <point x="2916.0542041292133" y="867.0" />
+      <point x="45.5" y="15.0" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="Messages.MessagingSystem" relationship="CREATE">
+      <point x="-91.19999999999993" y="-15.0" />
+      <point x="1631.948446553456" y="1471.0" />
+      <point x="388.3888892218979" y="1471.0" />
+      <point x="-49.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.CalendarCreator" target="User.UserSystem" relationship="DEPENDENCY">
+      <point x="-36.599999999999966" y="-15.0" />
+      <point x="2223.1305558885647" y="907.0" />
+      <point x="1464.0609090909093" y="907.0" />
+      <point x="1464.0609090909093" y="797.0" />
+      <point x="1775.438889221898" y="797.0" />
+      <point x="37.0" y="15.0" />
+    </edge>
+    <edge source="Calendar.CalendarSystem" target="Activity.ActivityManager" relationship="CREATE">
+      <point x="-52.0" y="-15.0" />
+      <point x="2818.5542041292133" y="595.0" />
+      <point x="2488.563889221898" y="595.0" />
+      <point x="2488.563889221898" y="493.0" />
+      <point x="2448.813889221898" y="493.0" />
+      <point x="-45.25" y="15.0" />
+    </edge>
+    <edge source="TextUI.QuitSystem" target="User.UserSystem" relationship="DEPENDENCY">
+      <point x="-41.14285714285714" y="-15.0" />
+      <point x="2035.0876987457075" y="907.0" />
+      <point x="1464.0609090909093" y="907.0" />
+      <point x="1464.0609090909093" y="797.0" />
+      <point x="1775.438889221898" y="797.0" />
+      <point x="37.0" y="15.0" />
+    </edge>
+    <edge source="Calendar.CalendarManager" target="Calendar.CalendarFactory" relationship="CREATE">
+      <point x="27.428571428571416" y="-15.0" />
+      <point x="2766.460714285714" y="503.0" />
+      <point x="2774.675" y="503.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Calendar.TimeTable" target="Activity.Activity" relationship="DEPENDENCY">
+      <point x="-32.75" y="-15.0" />
+      <point x="2638.313889221898" y="268.0" />
+      <point x="2665.563889221898" y="268.0" />
+      <point x="2665.563889221898" y="164.0" />
+      <point x="2670.4262239982245" y="164.0" />
+      <point x="2670.4262239982245" y="154.0" />
+      <point x="2603.6762239982245" y="154.0" />
+      <point x="28.0" y="15.0" />
+    </edge>
+    <edge source="Authentication.LoginSystem" target="Data.InformationReader" relationship="DEPENDENCY">
+      <point x="-51.33333333333334" y="-15.0" />
+      <point x="1619.3317798867893" y="1604.0" />
+      <point x="1083.1095573315579" y="1604.0" />
+      <point x="1083.1095573315579" y="877.0" />
+      <point x="1653.938889221898" y="877.0" />
+      <point x="1653.938889221898" y="503.0" />
+      <point x="1752.2317798867891" y="503.0" />
+      <point x="1752.2317798867891" y="493.0" />
+      <point x="1798.438889221898" y="493.0" />
+      <point x="49.75" y="15.0" />
+    </edge>
+    <edge source="Authentication.LoginSystem" target="TextUI.MainMenuSystem" relationship="TO_ONE">
+      <point x="0.0" y="-15.0" />
+      <point x="1670.6651132201225" y="1554.0" />
+      <point x="1771.1484465534559" y="1554.0" />
+      <point x="48.0" y="15.0" />
+    </edge>
+    <edge source="Data.InformationSaver" target="Calendar.Calendar" relationship="DEPENDENCY">
+      <point x="86.16666666666663" y="-15.0" />
+      <point x="2666.4488095238094" y="675.0" />
+      <point x="2949.063889221898" y="675.0" />
+      <point x="2949.063889221898" y="268.0" />
+      <point x="3147.515476190476" y="268.0" />
+      <point x="3147.515476190476" y="258.0" />
+      <point x="3170.2667001887007" y="258.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Messages.MessagingSystem" target="Messages.AdminMessageManager" relationship="TO_ONE">
+      <point x="-87.11111111111109" y="-15.0" />
+      <point x="350.2777781107868" y="1289.0" />
+      <point x="15.0" y="1289.0" />
+      <point x="15.0" y="61.0" />
+      <point x="339.12340909090926" y="61.0" />
+      <point x="-90.75" y="15.0" />
+    </edge>
+    <edge source="Template.TemplateManager" target="Data.InformationReader" relationship="DEPENDENCY">
+      <point x="-64.33333333333326" y="-15.0" />
+      <point x="1947.7305558885646" y="503.0" />
+      <point x="1752.2317798867891" y="503.0" />
+      <point x="1752.2317798867891" y="493.0" />
+      <point x="1798.438889221898" y="493.0" />
+      <point x="49.75" y="15.0" />
+    </edge>
+    <edge source="Activity.ActivityManager" target="Activity.Activity" relationship="CREATE">
+      <point x="45.25" y="-15.0" />
+      <point x="2539.313889221898" y="371.0" />
+      <point x="2499.563889221898" y="371.0" />
+      <point x="2499.563889221898" y="164.0" />
+      <point x="2670.4262239982245" y="164.0" />
+      <point x="2670.4262239982245" y="154.0" />
+      <point x="2603.6762239982245" y="154.0" />
+      <point x="28.0" y="15.0" />
+    </edge>
+    <edge source="Authentication.LoginSystem" target="User.UserSystem" relationship="DEPENDENCY">
+      <point x="-30.80000000000001" y="-15.0" />
+      <point x="1639.8651132201226" y="1584.0" />
+      <point x="1105.1095573315579" y="1584.0" />
+      <point x="1105.1095573315579" y="1279.0" />
+      <point x="1188.3" y="1279.0" />
+      <point x="1188.3" y="907.0" />
+      <point x="1464.0609090909093" y="907.0" />
+      <point x="1464.0609090909093" y="797.0" />
+      <point x="1775.438889221898" y="797.0" />
+      <point x="37.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="Data.InformationSaver" relationship="TO_ONE">
+      <point x="24.0" y="-15.0" />
+      <point x="1747.1484465534559" y="1401.0" />
+      <point x="1837.9984465534558" y="1401.0" />
+      <point x="1837.9984465534558" y="1109.0" />
+      <point x="2590.3667001887006" y="1109.0" />
+      <point x="2590.3667001887006" y="857.0" />
+      <point x="2533.282142857143" y="857.0" />
+      <point x="-47.0" y="15.0" />
+    </edge>
+    <edge source="Calendar.CalendarFactory" target="Calendar.Calendar" relationship="DEPENDENCY">
+      <point x="61.0" y="-15.0" />
+      <point x="2835.675" y="401.0" />
+      <point x="2927.063889221898" y="401.0" />
+      <point x="2927.063889221898" y="268.0" />
+      <point x="3147.515476190476" y="268.0" />
+      <point x="3147.515476190476" y="258.0" />
+      <point x="3170.2667001887007" y="258.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="DemoMain" target="TextUI.StartSystem" relationship="CREATE">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Data.InformationSaver" target="Template.TemplateManager" relationship="TO_ONE">
+      <point x="-23.5" y="-15.0" />
+      <point x="2556.782142857143" y="705.0" />
+      <point x="1893.063889221898" y="705.0" />
+      <point x="1893.063889221898" y="585.0" />
+      <point x="2060.313889221898" y="585.0" />
+      <point x="48.25" y="15.0" />
+    </edge>
+    <edge source="TextUI.StartSystem" target="User.UserSystem" relationship="CREATE">
+      <point x="-34.61538461538464" y="-15.0" />
+      <point x="1630.4901712731798" y="1727.0" />
+      <point x="1105.1095573315579" y="1727.0" />
+      <point x="1105.1095573315579" y="1269.0" />
+      <point x="1188.3" y="1269.0" />
+      <point x="1188.3" y="907.0" />
+      <point x="1464.0609090909093" y="907.0" />
+      <point x="1464.0609090909093" y="797.0" />
+      <point x="1775.438889221898" y="797.0" />
+      <point x="37.0" y="15.0" />
+    </edge>
+    <edge source="Authentication.LoginSystem" target="SendMail.EmailSender" relationship="TO_ONE">
+      <point x="71.86666666666667" y="-15.0" />
+      <point x="1742.531779886789" y="1624.0" />
+      <point x="3543.063889221898" y="1624.0" />
+      <point x="37.75" y="15.0" />
+    </edge>
+    <edge source="User.TemporaryUser" target="User.TrialUser" relationship="DEPENDENCY">
+      <point x="43.25" y="-15.0" />
+      <point x="886.3875374625466" y="248.0" />
+      <point x="1477.688889221898" y="248.0" />
+      <point x="1477.688889221898" y="164.0" />
+      <point x="1556.6067798867894" y="164.0" />
+      <point x="1556.6067798867894" y="144.0" />
+      <point x="1478.8428906648912" y="144.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.StartSystem" target="Calendar.CalendarSystem" relationship="CREATE">
+      <point x="46.15384615384619" y="-15.0" />
+      <point x="1711.2594020424108" y="1737.0" />
+      <point x="2103.4817798867894" y="1737.0" />
+      <point x="2103.4817798867894" y="1199.0" />
+      <point x="2807.3042041292133" y="1199.0" />
+      <point x="2807.3042041292133" y="877.0" />
+      <point x="2876.0542041292133" y="877.0" />
+      <point x="2876.0542041292133" y="867.0" />
+      <point x="2916.0542041292133" y="867.0" />
+      <point x="45.5" y="15.0" />
+    </edge>
+    <edge source="Messages.MessagingSystem" target="Messages.Observer" relationship="TO_ONE">
+      <point x="-43.55555555555566" y="-15.0" />
+      <point x="393.83333366634224" y="1269.0" />
+      <point x="37.0" y="1269.0" />
+      <point x="37.0" y="164.0" />
+      <point x="148.5" y="164.0" />
+      <point x="148.5" y="154.0" />
+      <point x="208.1875" y="154.0" />
+      <point x="-46.875" y="15.0" />
+    </edge>
+    <edge source="TextUI.ModifyTemplateSystem" target="Template.TemplateManager" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.0" />
+      <point x="1233.1095573315579" y="1049.0" />
+      <point x="1883.063889221898" y="1049.0" />
+      <point x="1883.063889221898" y="595.0" />
+      <point x="1963.813889221898" y="595.0" />
+      <point x="-48.25" y="15.0" />
+    </edge>
+    <edge source="TextUI.ActivityManagementSystem" target="Activity.Activity" relationship="DEPENDENCY">
+      <point x="91.0" y="-15.0" />
+      <point x="3372.265476190476" y="917.0" />
+      <point x="3812.2654761904764" y="917.0" />
+      <point x="3812.2654761904764" y="164.0" />
+      <point x="2670.4262239982245" y="164.0" />
+      <point x="2670.4262239982245" y="154.0" />
+      <point x="2603.6762239982245" y="154.0" />
+      <point x="28.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="Data.InformationReader" relationship="DEPENDENCY">
+      <point x="-43.19999999999993" y="-15.0" />
+      <point x="1679.948446553456" y="1421.0" />
+      <point x="1083.1095573315579" y="1421.0" />
+      <point x="1083.1095573315579" y="887.0" />
+      <point x="1653.938889221898" y="887.0" />
+      <point x="1653.938889221898" y="503.0" />
+      <point x="1752.2317798867891" y="503.0" />
+      <point x="1752.2317798867891" y="493.0" />
+      <point x="1798.438889221898" y="493.0" />
+      <point x="49.75" y="15.0" />
+    </edge>
+    <edge source="Messages.MessagingSystem" target="Messages.AdminMessageObserver" relationship="CREATE">
+      <point x="-21.77777777777783" y="-15.0" />
+      <point x="415.61111144412007" y="1259.0" />
+      <point x="170.5" y="1259.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Authentication.LoginSystem" target="Calendar.CalendarSystem" relationship="DEPENDENCY">
+      <point x="20.53333333333336" y="-15.0" />
+      <point x="1691.1984465534558" y="1574.0" />
+      <point x="2103.4817798867894" y="1574.0" />
+      <point x="2103.4817798867894" y="1189.0" />
+      <point x="2807.3042041292133" y="1189.0" />
+      <point x="2807.3042041292133" y="877.0" />
+      <point x="2876.0542041292133" y="877.0" />
+      <point x="2876.0542041292133" y="867.0" />
+      <point x="2916.0542041292133" y="867.0" />
+      <point x="45.5" y="15.0" />
+    </edge>
+    <edge source="User.UserManager" target="User.TemporaryUser" relationship="CREATE">
+      <point x="-19.75" y="-15.0" />
+      <point x="1492.813889221898" y="493.0" />
+      <point x="843.1375374625466" y="493.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.StartSystem" target="Data.InformationReader" relationship="CREATE">
+      <point x="-57.69230769230762" y="-15.0" />
+      <point x="1607.413248196257" y="1747.0" />
+      <point x="1083.1095573315579" y="1747.0" />
+      <point x="1083.1095573315579" y="867.0" />
+      <point x="1653.938889221898" y="867.0" />
+      <point x="1653.938889221898" y="503.0" />
+      <point x="1752.2317798867891" y="503.0" />
+      <point x="1752.2317798867891" y="493.0" />
+      <point x="1798.438889221898" y="493.0" />
+      <point x="49.75" y="15.0" />
+    </edge>
+    <edge source="Calendar.CalendarManager" target="Calendar.TimeTable" relationship="DEPENDENCY">
+      <point x="-27.42857142857156" y="-15.0" />
+      <point x="2711.6035714285713" y="483.0" />
+      <point x="2661.675" y="483.0" />
+      <point x="2661.675" y="371.0" />
+      <point x="2671.063889221898" y="371.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Data.InformationReader" target="Calendar.DateCalendar" relationship="CREATE">
+      <point x="87.0625" y="-15.0" />
+      <point x="1835.751389221898" y="391.0" />
+      <point x="2695.4262239982245" y="391.0" />
+      <point x="2695.4262239982245" y="371.0" />
+      <point x="2836.563889221898" y="371.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Calendar.CalendarSystem" target="Data.InformationReader" relationship="DEPENDENCY">
+      <point x="-78.0" y="-15.0" />
+      <point x="2792.5542041292133" y="605.0" />
+      <point x="1754.188889221898" y="605.0" />
+      <point x="1754.188889221898" y="503.0" />
+      <point x="1752.2317798867891" y="503.0" />
+      <point x="1752.2317798867891" y="493.0" />
+      <point x="1798.438889221898" y="493.0" />
+      <point x="49.75" y="15.0" />
+    </edge>
+    <edge source="Data.InformationReader" target="User.TrialUser" relationship="CREATE">
+      <point x="-12.4375" y="-15.0" />
+      <point x="1736.251389221898" y="164.0" />
+      <point x="1556.6067798867894" y="164.0" />
+      <point x="1556.6067798867894" y="144.0" />
+      <point x="1478.8428906648912" y="144.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Authentication.LoginSystem" target="User.TrialUser" relationship="DEPENDENCY">
+      <point x="-61.60000000000002" y="-15.0" />
+      <point x="1609.0651132201224" y="1614.0" />
+      <point x="897.9345573315579" y="1614.0" />
+      <point x="897.9345573315579" y="361.0" />
+      <point x="1477.688889221898" y="361.0" />
+      <point x="1477.688889221898" y="164.0" />
+      <point x="1556.6067798867894" y="164.0" />
+      <point x="1556.6067798867894" y="144.0" />
+      <point x="1478.8428906648912" y="144.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.StartSystem" target="TextUI.QuitSystem" relationship="CREATE">
+      <point x="-11.538461538461547" y="-15.0" />
+      <point x="1653.5670943501032" y="1707.0" />
+      <point x="1402.1095573315579" y="1707.0" />
+      <point x="1402.1095573315579" y="1289.0" />
+      <point x="1486.4428906648914" y="1289.0" />
+      <point x="1486.4428906648914" y="999.0" />
+      <point x="2112.2305558885646" y="999.0" />
+      <point x="36.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.QuitSystem" target="User.TrialUser" relationship="DEPENDENCY">
+      <point x="-20.571428571428555" y="-15.0" />
+      <point x="2055.659127317136" y="887.0" />
+      <point x="1848.188889221898" y="887.0" />
+      <point x="1848.188889221898" y="675.0" />
+      <point x="1858.688889221898" y="675.0" />
+      <point x="1858.688889221898" y="164.0" />
+      <point x="1556.6067798867894" y="164.0" />
+      <point x="1556.6067798867894" y="144.0" />
+      <point x="1478.8428906648912" y="144.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.CalendarViewer" target="TextUI.CalendarUpdatingSystem" relationship="DEPENDENCY">
+      <point x="22.125" y="-15.0" />
+      <point x="2026.6067798867894" y="1079.0" />
+      <point x="2155.9817798867894" y="1079.0" />
+      <point x="2155.9817798867894" y="989.0" />
+      <point x="3061.265476190476" y="989.0" />
+      <point x="63.5" y="15.0" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="TextUI.CalendarViewer" relationship="CREATE">
+      <point x="52.80000000000001" y="-15.0" />
+      <point x="1775.9484465534558" y="1431.0" />
+      <point x="1960.2317798867894" y="1431.0" />
+      <point x="-44.25" y="15.0" />
+    </edge>
+    <edge source="TextUI.QuitSystem" target="Data.InformationSaver" relationship="TO_ONE">
+      <point x="0.0" y="-15.0" />
+      <point x="2076.2305558885646" y="867.0" />
+      <point x="2590.3667001887006" y="867.0" />
+      <point x="2590.3667001887006" y="857.0" />
+      <point x="2533.282142857143" y="857.0" />
+      <point x="-47.0" y="15.0" />
+    </edge>
+    <edge source="Authentication.RegistrationSystem" target="Authentication.UserNameValidator" relationship="TO_ONE">
+      <point x="86.25" y="-15.0" />
+      <point x="3394.063889221898" y="1269.0" />
+      <point x="3750.7654761904764" y="1269.0" />
+      <point x="51.0" y="15.0" />
+    </edge>
+    <edge source="Messages.MessagingSystem" target="Messages.Messages" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.0" />
+      <point x="437.3888892218979" y="1249.0" />
+      <point x="304.0" y="1249.0" />
+      <point x="304.0" y="258.0" />
+      <point x="258.26253746254656" y="258.0" />
+      <point x="-33.0" y="15.0" />
+    </edge>
+    <edge source="Data.InformationSaver" target="Activity.ActivityManager" relationship="DEPENDENCY">
+      <point x="23.5" y="-15.0" />
+      <point x="2603.782142857143" y="625.0" />
+      <point x="2488.563889221898" y="625.0" />
+      <point x="2488.563889221898" y="493.0" />
+      <point x="2448.813889221898" y="493.0" />
+      <point x="-45.25" y="15.0" />
+    </edge>
+    <edge source="Messages.RespondMessageObserver" target="Messages.RespondMessage" relationship="DEPENDENCY">
+      <point x="22.166666666666742" y="-15.0" />
+      <point x="592.4292041292131" y="503.0" />
+      <point x="509.5958707958798" y="503.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.QuitSystem" target="Calendar.CalendarSystem" relationship="DEPENDENCY">
+      <point x="61.71428571428572" y="-15.0" />
+      <point x="2137.9448416028504" y="877.0" />
+      <point x="2876.0542041292133" y="877.0" />
+      <point x="2876.0542041292133" y="867.0" />
+      <point x="2916.0542041292133" y="867.0" />
+      <point x="45.5" y="15.0" />
+    </edge>
+    <edge source="TextUI.QuitSystem" target="User.UserSystem" relationship="TO_ONE">
+      <point x="-61.71428571428572" y="-15.0" />
+      <point x="2014.5162701742788" y="917.0" />
+      <point x="1177.3" y="917.0" />
+      <point x="1177.3" y="807.0" />
+      <point x="1701.438889221898" y="807.0" />
+      <point x="-37.0" y="15.0" />
+    </edge>
+    <edge source="Authentication.LoginSystem" target="Authentication.RegistrationSystem" relationship="DEPENDENCY">
+      <point x="30.80000000000001" y="-15.0" />
+      <point x="1701.4651132201225" y="1584.0" />
+      <point x="3296.813889221898" y="1584.0" />
+      <point x="3296.813889221898" y="1461.0" />
+      <point x="3238.813889221898" y="1461.0" />
+      <point x="-69.0" y="15.0" />
+    </edge>
+    <edge source="Authentication.RegistrationSystem" target="Authentication.LoginSystem" relationship="DEPENDENCY">
+      <point x="0.0" y="15.0" />
+      <point x="3307.813889221898" y="1594.0" />
+      <point x="1711.7317798867891" y="1594.0" />
+      <point x="41.06666666666666" y="-15.0" />
+    </edge>
+    <edge source="Calendar.CalendarSystem" target="Calendar.CalendarManager" relationship="TO_ONE">
+      <point x="0.0" y="-15.0" />
+      <point x="2870.5542041292133" y="725.0" />
+      <point x="2706.532142857143" y="725.0" />
+      <point x="2706.532142857143" y="575.0" />
+      <point x="2691.032142857143" y="575.0" />
+      <point x="-48.0" y="15.0" />
+    </edge>
+    <edge source="Authentication.UserNameValidator" target="Authentication.Validator" relationship="REALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Calendar.TimeTable" target="Calendar.Calendar" relationship="GENERALIZATION">
+      <point x="32.750000000000114" y="-15.0" />
+      <point x="2703.813889221898" y="268.0" />
+      <point x="2747.8012239982245" y="268.0" />
+      <point x="2747.8012239982245" y="258.0" />
+      <point x="3129.2667001887007" y="258.0" />
+      <point x="-41.0" y="15.0" />
+    </edge>
+    <edge source="User.UserSystem" target="Template.Template" relationship="DEPENDENCY">
+      <point x="46.25" y="-15.0" />
+      <point x="1784.688889221898" y="685.0" />
+      <point x="2119.063889221898" y="685.0" />
+      <point x="2119.063889221898" y="493.0" />
+      <point x="2096.563889221898" y="493.0" />
+      <point x="31.0" y="15.0" />
+    </edge>
+    <edge source="Data.InformationSaver" target="Template.TemplateManager" relationship="DEPENDENCY">
+      <point x="-39.16666666666663" y="-15.0" />
+      <point x="2541.1154761904763" y="715.0" />
+      <point x="1883.063889221898" y="715.0" />
+      <point x="1883.063889221898" y="595.0" />
+      <point x="1963.813889221898" y="595.0" />
+      <point x="-48.25" y="15.0" />
+    </edge>
+    <edge source="TextUI.CalendarUpdatingSystem" target="Calendar.CalendarSystem" relationship="TO_ONE">
+      <point x="-84.66666666666669" y="-15.0" />
+      <point x="2913.0988095238095" y="887.0" />
+      <point x="2750.265476190476" y="887.0" />
+      <point x="2750.265476190476" y="867.0" />
+      <point x="2825.0542041292133" y="867.0" />
+      <point x="-45.5" y="15.0" />
+    </edge>
+    <edge source="Authentication.RegistrationSystem" target="Authentication.PasswordValidator" relationship="CREATE">
+      <point x="-17.25" y="-15.0" />
+      <point x="3290.563889221898" y="1239.0" />
+      <point x="3576.265476190476" y="1239.0" />
+      <point x="3576.265476190476" y="685.0" />
+      <point x="3488.265476190476" y="685.0" />
+      <point x="-49.5" y="15.0" />
+    </edge>
+    <edge source="User.UserSystem" target="Template.TemplateManager" relationship="CREATE">
+      <point x="9.25" y="-15.0" />
+      <point x="1747.688889221898" y="715.0" />
+      <point x="1883.063889221898" y="715.0" />
+      <point x="1883.063889221898" y="595.0" />
+      <point x="1963.813889221898" y="595.0" />
+      <point x="-48.25" y="15.0" />
+    </edge>
+    <edge source="Data.InformationReader" target="Activity.Activity" relationship="CREATE">
+      <point x="12.4375" y="-15.0" />
+      <point x="1761.126389221898" y="361.0" />
+      <point x="2395.3" y="361.0" />
+      <point x="2395.3" y="164.0" />
+      <point x="2670.4262239982245" y="164.0" />
+      <point x="2670.4262239982245" y="154.0" />
+      <point x="2603.6762239982245" y="154.0" />
+      <point x="28.0" y="15.0" />
+    </edge>
+    <edge source="Messages.AdminMessageObserver" target="Messages.AdminMessageManager" relationship="DEPENDENCY">
+      <point x="-98.40000000000009" y="-15.0" />
+      <point x="72.09999999999991" y="917.0" />
+      <point x="26.0" y="917.0" />
+      <point x="26.0" y="71.0" />
+      <point x="266.24840909090926" y="71.0" />
+      <point x="266.24840909090926" y="51.0" />
+      <point x="399.62340909090926" y="51.0" />
+      <point x="-30.25" y="15.0" />
+    </edge>
+    <edge source="Authentication.LoginSystem" target="TextUI.QuitSystem" relationship="DEPENDENCY">
+      <point x="-20.533333333333303" y="-15.0" />
+      <point x="1650.1317798867892" y="1574.0" />
+      <point x="1435.5928906648912" y="1574.0" />
+      <point x="1435.5928906648912" y="1289.0" />
+      <point x="1486.4428906648914" y="1289.0" />
+      <point x="1486.4428906648914" y="999.0" />
+      <point x="2112.2305558885646" y="999.0" />
+      <point x="36.0" y="15.0" />
+    </edge>
+    <edge source="Data.InformationReader" target="User.RegularUser" relationship="CREATE">
+      <point x="-37.3125" y="-15.0" />
+      <point x="1711.376389221898" y="341.0" />
+      <point x="1448.188889221898" y="341.0" />
+      <point x="1448.188889221898" y="268.0" />
+      <point x="1351.188889221898" y="268.0" />
+      <point x="1351.188889221898" y="238.0" />
+      <point x="886.5734465534559" y="238.0" />
+      <point x="37.5" y="15.0" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="TextUI.CalendarUpdatingSystem" relationship="CREATE">
+      <point x="81.60000000000002" y="-15.0" />
+      <point x="1804.7484465534558" y="1461.0" />
+      <point x="2155.9817798867894" y="1461.0" />
+      <point x="2155.9817798867894" y="989.0" />
+      <point x="3061.265476190476" y="989.0" />
+      <point x="63.5" y="15.0" />
+    </edge>
+    <edge source="Data.InformationSaver" target="Activity.Activity" relationship="DEPENDENCY">
+      <point x="7.833333333333371" y="-15.0" />
+      <point x="2588.1154761904763" y="635.0" />
+      <point x="2393.063889221898" y="635.0" />
+      <point x="2393.063889221898" y="371.0" />
+      <point x="2466.188889221898" y="371.0" />
+      <point x="2466.188889221898" y="164.0" />
+      <point x="2670.4262239982245" y="164.0" />
+      <point x="2670.4262239982245" y="154.0" />
+      <point x="2603.6762239982245" y="154.0" />
+      <point x="28.0" y="15.0" />
+    </edge>
+    <edge source="Messages.MessagingSystem" target="Messages.AdminMessage" relationship="CREATE">
+      <point x="65.33333333333348" y="-15.0" />
+      <point x="502.7222225552314" y="1279.0" />
+      <point x="713.7625374625466" y="1279.0" />
+      <point x="713.7625374625466" y="401.0" />
+      <point x="658.5958707958798" y="401.0" />
+      <point x="658.5958707958798" y="391.0" />
+      <point x="618.0" y="391.0" />
+      <point x="43.25" y="15.0" />
+    </edge>
+    <edge source="Authentication.RegistrationSystem" target="User.UserSystem" relationship="DEPENDENCY">
+      <point x="-51.75" y="-15.0" />
+      <point x="3256.063889221898" y="1009.0" />
+      <point x="1646.938889221898" y="1009.0" />
+      <point x="1646.938889221898" y="907.0" />
+      <point x="1464.0609090909093" y="907.0" />
+      <point x="1464.0609090909093" y="797.0" />
+      <point x="1775.438889221898" y="797.0" />
+      <point x="37.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.ActivityManagementSystem" target="Calendar.Calendar" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.0" />
+      <point x="3281.265476190476" y="268.0" />
+      <point x="3147.515476190476" y="268.0" />
+      <point x="3147.515476190476" y="258.0" />
+      <point x="3170.2667001887007" y="258.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Calendar.CalendarManager" target="Activity.Activity" relationship="DEPENDENCY">
+      <point x="-54.85714285714289" y="-15.0" />
+      <point x="2684.175" y="493.0" />
+      <point x="2595.063889221898" y="493.0" />
+      <point x="2595.063889221898" y="164.0" />
+      <point x="2670.4262239982245" y="164.0" />
+      <point x="2670.4262239982245" y="154.0" />
+      <point x="2603.6762239982245" y="154.0" />
+      <point x="28.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="TextUI.ModifyTemplateSystem" relationship="CREATE">
+      <point x="-14.399999999999977" y="-15.0" />
+      <point x="1708.7484465534558" y="1391.0" />
+      <point x="1291.8595573315579" y="1391.0" />
+      <point x="58.75" y="15.0" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="Data.InformationReader" relationship="TO_ONE">
+      <point x="-52.799999999999955" y="-15.0" />
+      <point x="1670.348446553456" y="1431.0" />
+      <point x="1072.1095573315579" y="1431.0" />
+      <point x="1072.1095573315579" y="847.0" />
+      <point x="1642.938889221898" y="847.0" />
+      <point x="1642.938889221898" y="493.0" />
+      <point x="1698.938889221898" y="493.0" />
+      <point x="-49.75" y="15.0" />
+    </edge>
+    <edge source="Authentication.LoginSystem" target="User.UserSystem" relationship="TO_ONE">
+      <point x="-41.06666666666666" y="-15.0" />
+      <point x="1629.598446553456" y="1594.0" />
+      <point x="1094.1095573315579" y="1594.0" />
+      <point x="1094.1095573315579" y="917.0" />
+      <point x="1177.3" y="917.0" />
+      <point x="1177.3" y="807.0" />
+      <point x="1701.438889221898" y="807.0" />
+      <point x="-37.0" y="15.0" />
+    </edge>
+    <edge source="User.RegularUser" target="User.TrialUser" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="849.0734465534559" y="164.0" />
+      <point x="1437.8428906648912" y="164.0" />
+      <point x="-41.0" y="15.0" />
+    </edge>
+    <edge source="Authentication.RegistrationSystem" target="Authentication.PasswordValidator" relationship="TO_ONE">
+      <point x="17.25" y="-15.0" />
+      <point x="3325.063889221898" y="1249.0" />
+      <point x="3587.265476190476" y="1249.0" />
+      <point x="49.5" y="15.0" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="User.TrialUser" relationship="DEPENDENCY">
+      <point x="-71.99999999999994" y="-15.0" />
+      <point x="1651.1484465534559" y="1451.0" />
+      <point x="897.9345573315579" y="1451.0" />
+      <point x="897.9345573315579" y="371.0" />
+      <point x="1477.688889221898" y="371.0" />
+      <point x="1477.688889221898" y="164.0" />
+      <point x="1556.6067798867894" y="164.0" />
+      <point x="1556.6067798867894" y="144.0" />
+      <point x="1478.8428906648912" y="144.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.QuitSystem" target="Calendar.CalendarSystem" relationship="TO_ONE">
+      <point x="41.14285714285717" y="-15.0" />
+      <point x="2117.373413031422" y="887.0" />
+      <point x="2750.265476190476" y="887.0" />
+      <point x="2750.265476190476" y="867.0" />
+      <point x="2825.0542041292133" y="867.0" />
+      <point x="-45.5" y="15.0" />
+    </edge>
+    <edge source="TextUI.CalendarUpdatingSystem" target="Calendar.Calendar" relationship="DEPENDENCY">
+      <point x="84.66666666666674" y="-15.0" />
+      <point x="3082.432142857143" y="867.0" />
+      <point x="3181.8488095238095" y="867.0" />
+      <point x="3181.8488095238095" y="268.0" />
+      <point x="3147.515476190476" y="268.0" />
+      <point x="3147.515476190476" y="258.0" />
+      <point x="3170.2667001887007" y="258.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Calendar.CalendarSystem" target="Calendar.Calendar" relationship="DEPENDENCY">
+      <point x="52.0" y="-15.0" />
+      <point x="2922.5542041292133" y="685.0" />
+      <point x="3074.015476190476" y="685.0" />
+      <point x="3074.015476190476" y="268.0" />
+      <point x="3147.515476190476" y="268.0" />
+      <point x="3147.515476190476" y="258.0" />
+      <point x="3170.2667001887007" y="258.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Data.InformationSaver" target="Calendar.CalendarManager" relationship="DEPENDENCY">
+      <point x="70.5" y="-15.0" />
+      <point x="2650.782142857143" y="715.0" />
+      <point x="2783.2119382839387" y="715.0" />
+      <point x="2783.2119382839387" y="575.0" />
+      <point x="2787.032142857143" y="575.0" />
+      <point x="48.0" y="15.0" />
+    </edge>
+    <edge source="Messages.AdminMessageManager" target="Messages.AdminMessage" relationship="TO_MANY">
+      <point x="30.25" y="15.0" />
+      <point x="460.12340909090926" y="71.0" />
+      <point x="574.75" y="71.0" />
+      <point x="0.0" y="-15.0" />
+    </edge>
+    <edge source="User.UserSystem" target="User.UserManager" relationship="CREATE">
+      <point x="-46.25" y="-15.0" />
+      <point x="1692.188889221898" y="725.0" />
+      <point x="1612.563889221898" y="725.0" />
+      <point x="1612.563889221898" y="705.0" />
+      <point x="1473.063889221898" y="705.0" />
+      <point x="-39.5" y="15.0" />
+    </edge>
+    <edge source="User.UserSystem" target="Data.InformationReader" relationship="DEPENDENCY">
+      <point x="-27.75" y="-15.0" />
+      <point x="1710.688889221898" y="715.0" />
+      <point x="1686.313889221898" y="715.0" />
+      <point x="1686.313889221898" y="503.0" />
+      <point x="1752.2317798867891" y="503.0" />
+      <point x="1752.2317798867891" y="493.0" />
+      <point x="1798.438889221898" y="493.0" />
+      <point x="49.75" y="15.0" />
+    </edge>
+    <edge source="Messages.MessagingSystem" target="Messages.AdminMessageManager" relationship="CREATE">
+      <point x="-65.33333333333326" y="-15.0" />
+      <point x="372.05555588856464" y="1279.0" />
+      <point x="26.0" y="1279.0" />
+      <point x="26.0" y="71.0" />
+      <point x="266.24840909090926" y="71.0" />
+      <point x="266.24840909090926" y="51.0" />
+      <point x="399.62340909090926" y="51.0" />
+      <point x="-30.25" y="15.0" />
+    </edge>
+    <edge source="TextUI.StartSystem" target="Data.InformationSaver" relationship="CREATE">
+      <point x="23.076923076923094" y="-15.0" />
+      <point x="1688.1824789654877" y="1717.0" />
+      <point x="1883.198446553456" y="1717.0" />
+      <point x="1883.198446553456" y="1139.0" />
+      <point x="2639.679204129213" y="1139.0" />
+      <point x="2639.679204129213" y="897.0" />
+      <point x="2600.3667001887006" y="897.0" />
+      <point x="2600.3667001887006" y="867.0" />
+      <point x="2627.282142857143" y="867.0" />
+      <point x="47.0" y="15.0" />
+    </edge>
+    <edge source="Messages.RespondMessageObserver" target="Messages.AdminMessage" relationship="DEPENDENCY">
+      <point x="66.5" y="-15.0" />
+      <point x="636.7625374625466" y="887.0" />
+      <point x="658.5958707958798" y="887.0" />
+      <point x="658.5958707958798" y="391.0" />
+      <point x="618.0" y="391.0" />
+      <point x="43.25" y="15.0" />
+    </edge>
+    <edge source="Data.InformationSaver" target="User.TrialUser" relationship="DEPENDENCY">
+      <point x="-54.83333333333326" y="-15.0" />
+      <point x="2525.4488095238094" y="655.0" />
+      <point x="1905.063889221898" y="655.0" />
+      <point x="1905.063889221898" y="164.0" />
+      <point x="1556.6067798867894" y="164.0" />
+      <point x="1556.6067798867894" y="144.0" />
+      <point x="1478.8428906648912" y="144.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Messages.RespondMessageObserver" target="Messages.AdminMessageManager" relationship="DEPENDENCY">
+      <point x="-22.166666666666742" y="-15.0" />
+      <point x="548.0958707958798" y="847.0" />
+      <point x="367.76253746254656" y="847.0" />
+      <point x="367.76253746254656" y="71.0" />
+      <point x="266.24840909090926" y="71.0" />
+      <point x="266.24840909090926" y="51.0" />
+      <point x="399.62340909090926" y="51.0" />
+      <point x="-30.25" y="15.0" />
+    </edge>
+    <edge source="Calendar.CalendarManager" target="Activity.ActivityManager" relationship="DEPENDENCY">
+      <point x="-82.28571428571428" y="-15.0" />
+      <point x="2656.7464285714286" y="503.0" />
+      <point x="2488.563889221898" y="503.0" />
+      <point x="2488.563889221898" y="493.0" />
+      <point x="2448.813889221898" y="493.0" />
+      <point x="-45.25" y="15.0" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="User.UserManager" relationship="DEPENDENCY">
+      <point x="-62.39999999999998" y="-15.0" />
+      <point x="1660.7484465534558" y="1441.0" />
+      <point x="1054.173446553456" y="1441.0" />
+      <point x="1054.173446553456" y="827.0" />
+      <point x="1602.2317798867894" y="827.0" />
+      <point x="1602.2317798867894" y="725.0" />
+      <point x="1612.563889221898" y="725.0" />
+      <point x="1612.563889221898" y="705.0" />
+      <point x="1473.063889221898" y="705.0" />
+      <point x="-39.5" y="15.0" />
+    </edge>
+    <edge source="Data.InformationReader" target="User.TemporaryUser" relationship="CREATE">
+      <point x="-62.1875" y="-15.0" />
+      <point x="1686.501389221898" y="391.0" />
+      <point x="843.1375374625466" y="391.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Authentication.LoginSystem" target="User.TemporaryUser" relationship="DEPENDENCY">
+      <point x="-71.8666666666667" y="-15.0" />
+      <point x="1598.7984465534557" y="1624.0" />
+      <point x="800.1375374625466" y="1624.0" />
+      <point x="800.1375374625466" y="391.0" />
+      <point x="843.1375374625466" y="391.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Messages.RespondMessageObserver" target="Data.InformationSaver" relationship="DEPENDENCY">
+      <point x="110.83333333333337" y="-15.0" />
+      <point x="681.0958707958799" y="897.0" />
+      <point x="2600.3667001887006" y="897.0" />
+      <point x="2600.3667001887006" y="867.0" />
+      <point x="2627.282142857143" y="867.0" />
+      <point x="47.0" y="15.0" />
+    </edge>
+    <edge source="Authentication.LoginSystem" target="Authentication.RegistrationSystem" relationship="TO_ONE">
+      <point x="51.333333333333314" y="-15.0" />
+      <point x="1721.9984465534558" y="1604.0" />
+      <point x="3318.813889221898" y="1604.0" />
+      <point x="3318.813889221898" y="1471.0" />
+      <point x="3376.813889221898" y="1471.0" />
+      <point x="69.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.CalendarCreator" target="Template.Template" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.0" />
+      <point x="2259.7305558885646" y="857.0" />
+      <point x="2119.063889221898" y="857.0" />
+      <point x="2119.063889221898" y="493.0" />
+      <point x="2096.563889221898" y="493.0" />
+      <point x="31.0" y="15.0" />
+    </edge>
+    <edge source="Authentication.LoginSystem" target="SendMail.EmailSender" relationship="CREATE">
+      <point x="61.60000000000002" y="-15.0" />
+      <point x="1732.2651132201227" y="1614.0" />
+      <point x="3467.563889221898" y="1614.0" />
+      <point x="-37.75" y="15.0" />
+    </edge>
+    <edge source="Calendar.CalendarSystem" target="Activity.Activity" relationship="DEPENDENCY">
+      <point x="78.0" y="-15.0" />
+      <point x="2948.5542041292133" y="725.0" />
+      <point x="3812.2654761904764" y="725.0" />
+      <point x="3812.2654761904764" y="164.0" />
+      <point x="2670.4262239982245" y="164.0" />
+      <point x="2670.4262239982245" y="154.0" />
+      <point x="2603.6762239982245" y="154.0" />
+      <point x="28.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.CalendarCreator" target="Calendar.CalendarSystem" relationship="TO_ONE">
+      <point x="36.60000000000002" y="-15.0" />
+      <point x="2296.3305558885645" y="887.0" />
+      <point x="2750.265476190476" y="887.0" />
+      <point x="2750.265476190476" y="867.0" />
+      <point x="2825.0542041292133" y="867.0" />
+      <point x="-45.5" y="15.0" />
+    </edge>
+    <edge source="Messages.AdminMessageObserver" target="Messages.Messages" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.0" />
+      <point x="170.5" y="268.0" />
+      <point x="304.0" y="268.0" />
+      <point x="304.0" y="258.0" />
+      <point x="258.26253746254656" y="258.0" />
+      <point x="-33.0" y="15.0" />
+    </edge>
+    <edge source="Data.InformationSaver" target="User.UserManager" relationship="DEPENDENCY">
+      <point x="-86.16666666666663" y="-15.0" />
+      <point x="2494.1154761904763" y="725.0" />
+      <point x="1612.563889221898" y="725.0" />
+      <point x="1612.563889221898" y="705.0" />
+      <point x="1473.063889221898" y="705.0" />
+      <point x="-39.5" y="15.0" />
+    </edge>
+    <edge source="TextUI.StartSystem" target="Authentication.RegistrationSystem" relationship="CREATE">
+      <point x="57.692307692307736" y="-15.0" />
+      <point x="1722.7978635808722" y="1747.0" />
+      <point x="3296.813889221898" y="1747.0" />
+      <point x="3296.813889221898" y="1461.0" />
+      <point x="3238.813889221898" y="1461.0" />
+      <point x="-69.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.CalendarViewer" target="TextUI.ActivityManagementSystem" relationship="CREATE">
+      <point x="51.625" y="-15.0" />
+      <point x="2056.1067798867894" y="1219.0" />
+      <point x="3349.5154761904764" y="1219.0" />
+      <point x="68.25" y="15.0" />
+    </edge>
+    <edge source="Template.BasicQuestionListIterator" target="Template.Template" relationship="DEPENDENCY">
+      <point x="-63.25" y="-15.0" />
+      <point x="2192.813889221898" y="503.0" />
+      <point x="2119.063889221898" y="503.0" />
+      <point x="2119.063889221898" y="493.0" />
+      <point x="2096.563889221898" y="493.0" />
+      <point x="31.0" y="15.0" />
+    </edge>
+    <edge source="Messages.RespondMessage" target="Messages.Messages" relationship="GENERALIZATION">
+      <point x="-64.33333333333326" y="-15.0" />
+      <point x="445.26253746254656" y="401.0" />
+      <point x="315.0" y="401.0" />
+      <point x="315.0" y="258.0" />
+      <point x="324.26253746254656" y="258.0" />
+      <point x="33.0" y="15.0" />
+    </edge>
+    <edge source="User.UserManager" target="User.RegularUser" relationship="CREATE">
+      <point x="-59.25" y="-15.0" />
+      <point x="1453.313889221898" y="503.0" />
+      <point x="746.1375374625466" y="503.0" />
+      <point x="746.1375374625466" y="268.0" />
+      <point x="1351.188889221898" y="268.0" />
+      <point x="1351.188889221898" y="238.0" />
+      <point x="886.5734465534559" y="238.0" />
+      <point x="37.5" y="15.0" />
+    </edge>
+    <edge source="User.UserSystem" target="User.TrialUser" relationship="DEPENDENCY">
+      <point x="-64.75" y="-15.0" />
+      <point x="1673.688889221898" y="715.0" />
+      <point x="1602.063889221898" y="715.0" />
+      <point x="1602.063889221898" y="164.0" />
+      <point x="1556.6067798867894" y="164.0" />
+      <point x="1556.6067798867894" y="144.0" />
+      <point x="1478.8428906648912" y="144.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.StartSystem" target="Authentication.LoginSystem" relationship="CREATE">
+      <point x="11.538461538461547" y="-15.0" />
+      <point x="1676.644017427026" y="1707.0" />
+      <point x="1709.1651132201225" y="1707.0" />
+      <point x="38.5" y="15.0" />
+    </edge>
+    <edge source="Data.InformationReader" target="Calendar.TimeTable" relationship="CREATE">
+      <point x="62.1875" y="-15.0" />
+      <point x="1810.876389221898" y="401.0" />
+      <point x="2661.675" y="401.0" />
+      <point x="2661.675" y="371.0" />
+      <point x="2671.063889221898" y="371.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="SendMail.EmailSender" target="SendMail.JavaMailUtil" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.CalendarViewer" target="Calendar.Calendar" relationship="DEPENDENCY">
+      <point x="66.375" y="-15.0" />
+      <point x="2070.8567798867894" y="1229.0" />
+      <point x="3428.2654761904764" y="1229.0" />
+      <point x="3428.265476190476" y="268.0" />
+      <point x="3147.515476190476" y="268.0" />
+      <point x="3147.515476190476" y="258.0" />
+      <point x="3170.2667001887007" y="258.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.StartSystem" target="Calendar.CalendarSystem" relationship="TO_ONE">
+      <point x="34.61538461538464" y="-15.0" />
+      <point x="1699.7209405039494" y="1727.0" />
+      <point x="1894.4817798867894" y="1727.0" />
+      <point x="1894.4817798867894" y="1149.0" />
+      <point x="2750.265476190476" y="1149.0" />
+      <point x="2750.265476190476" y="867.0" />
+      <point x="2825.0542041292133" y="867.0" />
+      <point x="-45.5" y="15.0" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="TextUI.CalendarCreator" relationship="CREATE">
+      <point x="4.800000000000011" y="-15.0" />
+      <point x="1727.9484465534558" y="1371.0" />
+      <point x="1583.0678906648914" y="1371.0" />
+      <point x="1583.0678906648914" y="1089.0" />
+      <point x="2213.9805558885646" y="1089.0" />
+      <point x="-45.75" y="15.0" />
+    </edge>
+    <edge source="Messages.AdminMessageObserver" target="Data.InformationSaver" relationship="DEPENDENCY">
+      <point x="98.39999999999998" y="-15.0" />
+      <point x="268.9000000000001" y="897.0" />
+      <point x="2600.3667001887006" y="897.0" />
+      <point x="2600.3667001887006" y="867.0" />
+      <point x="2627.282142857143" y="867.0" />
+      <point x="47.0" y="15.0" />
+    </edge>
+    <edge source="Data.InformationSaver" target="Calendar.CalendarManager" relationship="TO_ONE">
+      <point x="54.83333333333337" y="-15.0" />
+      <point x="2635.1154761904763" y="725.0" />
+      <point x="2706.532142857143" y="725.0" />
+      <point x="2706.532142857143" y="575.0" />
+      <point x="2691.032142857143" y="575.0" />
+      <point x="-48.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.StartSystem" target="User.UserSystem" relationship="TO_ONE">
+      <point x="-46.15384615384619" y="-15.0" />
+      <point x="1618.9517097347184" y="1737.0" />
+      <point x="1094.1095573315579" y="1737.0" />
+      <point x="1094.1095573315579" y="917.0" />
+      <point x="1177.3" y="917.0" />
+      <point x="1177.3" y="807.0" />
+      <point x="1701.438889221898" y="807.0" />
+      <point x="-37.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="Authentication.RegistrationSystem" relationship="DEPENDENCY">
+      <point x="91.19999999999999" y="-15.0" />
+      <point x="1814.348446553456" y="1471.0" />
+      <point x="3296.813889221898" y="1471.0" />
+      <point x="3296.813889221898" y="1461.0" />
+      <point x="3238.813889221898" y="1461.0" />
+      <point x="-69.0" y="15.0" />
+    </edge>
+    <edge source="Authentication.RegistrationSystem" target="TextUI.QuitSystem" relationship="DEPENDENCY">
+      <point x="-86.25" y="-15.0" />
+      <point x="3221.563889221898" y="1289.0" />
+      <point x="1486.4428906648914" y="1289.0" />
+      <point x="1486.4428906648914" y="999.0" />
+      <point x="2112.2305558885646" y="999.0" />
+      <point x="36.0" y="15.0" />
+    </edge>
+    <edge source="Calendar.CalendarManager" target="Calendar.DateCalendar" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.0" />
+      <point x="2739.032142857143" y="473.0" />
+      <point x="2672.675" y="473.0" />
+      <point x="2672.675" y="391.0" />
+      <point x="2695.4262239982245" y="391.0" />
+      <point x="2695.4262239982245" y="371.0" />
+      <point x="2836.563889221898" y="371.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="User.TemporaryUser" target="User.RegularUser" relationship="GENERALIZATION">
+      <point x="-43.25" y="-15.0" />
+      <point x="799.8875374625466" y="248.0" />
+      <point x="811.5734465534559" y="248.0" />
+      <point x="-37.5" y="15.0" />
+    </edge>
+    <edge source="Calendar.Calendar" target="Activity.Activity" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.0" />
+      <point x="3170.2667001887007" y="164.0" />
+      <point x="2670.4262239982245" y="164.0" />
+      <point x="2670.4262239982245" y="154.0" />
+      <point x="2603.6762239982245" y="154.0" />
+      <point x="28.0" y="15.0" />
+    </edge>
+    <edge source="Data.InformationSaver" target="Template.BasicQuestionListIterator" relationship="CREATE">
+      <point x="-7.8333333333332575" y="-15.0" />
+      <point x="2572.4488095238094" y="645.0" />
+      <point x="2256.063889221898" y="645.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Calendar.CalendarSystem" target="Activity.ActivityManager" relationship="TO_ONE">
+      <point x="-26.0" y="-15.0" />
+      <point x="2844.5542041292133" y="585.0" />
+      <point x="2499.563889221898" y="585.0" />
+      <point x="2499.563889221898" y="493.0" />
+      <point x="2539.313889221898" y="493.0" />
+      <point x="45.25" y="15.0" />
+    </edge>
+    <edge source="TextUI.CalendarViewer" target="User.UserSystem" relationship="DEPENDENCY">
+      <point x="-66.375" y="-15.0" />
+      <point x="1938.1067798867894" y="1029.0" />
+      <point x="1263.3" y="1029.0" />
+      <point x="1263.3" y="907.0" />
+      <point x="1464.0609090909093" y="907.0" />
+      <point x="1464.0609090909093" y="797.0" />
+      <point x="1775.438889221898" y="797.0" />
+      <point x="37.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.CalendarViewer" target="Calendar.CalendarSystem" relationship="DEPENDENCY">
+      <point x="-7.375" y="-15.0" />
+      <point x="1997.1067798867894" y="1179.0" />
+      <point x="2807.077976190476" y="1179.0" />
+      <point x="2807.077976190476" y="877.0" />
+      <point x="2876.0542041292133" y="877.0" />
+      <point x="2876.0542041292133" y="867.0" />
+      <point x="2916.0542041292133" y="867.0" />
+      <point x="45.5" y="15.0" />
+    </edge>
+    <edge source="Calendar.CalendarManager" target="Calendar.Calendar" relationship="DEPENDENCY">
+      <point x="54.85714285714289" y="-15.0" />
+      <point x="2793.8892857142855" y="493.0" />
+      <point x="2927.063889221898" y="493.0" />
+      <point x="2927.063889221898" y="268.0" />
+      <point x="3147.515476190476" y="268.0" />
+      <point x="3147.515476190476" y="258.0" />
+      <point x="3170.2667001887007" y="258.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="TextUI.StartSystem" target="Data.InformationReader" relationship="TO_ONE">
+      <point x="-69.23076923076928" y="-15.0" />
+      <point x="1595.8747866577953" y="1757.0" />
+      <point x="1072.1095573315579" y="1757.0" />
+      <point x="1072.1095573315579" y="837.0" />
+      <point x="1642.938889221898" y="837.0" />
+      <point x="1642.938889221898" y="493.0" />
+      <point x="1698.938889221898" y="493.0" />
+      <point x="-49.75" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.3195930080876598" showDependencies="true" x="1906.5" y="944.0" />
+  <SelectedNodes>
+    <node>Messages.AdminMessageManager</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

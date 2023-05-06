@@ -17,10 +17,10 @@ package, the program runs through the main method.
 All the required .csv files should be placed in the Data package. These are the csv files which store all the 
 information of saved Data. For example, calendar.csv stores all the information of saved calendars. 
 
-####In order to run the program successfully, you need to download external libraries for openCSV, Apache Commons Lang and javaMail.
-####You can download javax.mail.jar at: https://javaee.github.io/javamail/
-####You can download opencsv-5.5.1.jar at: https://sourceforge.net/projects/opencsv/files/latest/download
-####You can download commons-lang3-3.11.jar at: https://mvnrepository.com/artifact/org.apache.commons/commons-lang3/3.11
+### In order to run the program successfully, you need to download external libraries for openCSV, Apache Commons Lang and javaMail.
+### You can download javax.mail.jar at: https://javaee.github.io/javamail/
+### You can download opencsv-5.5.1.jar at: https://sourceforge.net/projects/opencsv/files/latest/download
+### You can download commons-lang3-3.11.jar at: https://mvnrepository.com/artifact/org.apache.commons/commons-lang3/3.11
 Please then add these jar files to your libraries.
 
 In case you can not use the email function properly, if exception raised:

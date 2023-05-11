@@ -149,31 +149,31 @@ only be successfully sent if the recipient is a gmail account. This is also why 
   
 
 ## Design Pattern
-###Factory Design Pattern
+### Factory Design Pattern
 CalendarFactory is used to encapsulate the constructors when making instances of subclasses 
 (in this case, dateCalendar/monthlyCalendar and timeTable) for an abstract class (Calendar). With this design, 
 classes that create a certain type of calendar based on user input do not need to know which type of the calendar it is 
 creating, which improves encapsulation and abstraction.
 
-###Dependency Injection Pattern
+### Dependency Injection Pattern
 We used dependency injection design pattern in multiple places in our program to avoid hard dependencies. For example,
 in the use case classes like user manager and calendar manager. We need the output from the information reader which is 
 a gateway class to initialize its attributes from the csv. Instead of having dependencies, we are creating an 
 information reader object outside of these use case classes and passing the object inside the use case classes so that 
 now the constructor works perfectly and there are no dependencies between use case classes and gateway classes.
 
-###Iterator Design Pattern
+### Iterator Design Pattern
 We applied Iterator Design Pattern when we design savor. Since we do save work using csv, we need to iterate Template's 
 QuestionList when we save them. However, with the goal of decreasing dependency in mind, we applied Iterator pattern, so
 that we only initiate an Iterator at the beginning of usage, and we will not need to reveal structure of Template and Template
 manager, just an abstract.
 
-###Strategy Design Pattern
+### Strategy Design Pattern
 Validator is an interface for UseNameValidator and PasswordValidator, which is considered as a strategy pattern.
 For classes with common properties, but apply different algorithms, an interface can be used to encapsulate the 
 algorithms as they are now isolated.
 
-###Observer Design Pattern
+### Observer Design Pattern
 We applied Observer Design Pattern when we design messaging System. Unlike other information that are stored to file only
 after the user log out, Messages are stored immediately since they are read in a more direct way. AdminMessage has a attribute
 called state that represents whether his message has been responded, and it will be updated as soon as being responded. This
@@ -182,7 +182,7 @@ as well. Thus, we introduce the observer pattern and let two observers watch adm
 states of message after responding and reload them in the file so that they are always up-to-date. This observer enables 
 us to decrease dependency between messaging system and other classes and decrease responsibility as well.
 
-###Façade Design pattern
+### Façade Design pattern
 Although we did not directly use the facade design pattern, we used a similar idea as facade when we were writing the
 main menu of users. The facade design pattern creates a facade class that creates classes that each interact with one 
 actor and delegate responsibility to these classes. On the other hand, in the main menu class it also creates multiple 
@@ -190,7 +190,7 @@ classes like calendar creator, modifying template system, messaging system and s
 responsibility and depending on the input of the user, it interacts with these classes to delegate each feature. 
 
 
-##Design Decisions & Things improved from Phase 1
+## Design Decisions & Things improved from Phase 1
 - Changed all the use of array lists into lists which are more abstract to keep the attribute as abstract as possible.
 - In phase 1, our saver and read functions are scattered all over the place which would violate the single
   responsibility principle. In phase2, we moved them to two separate gateway classes where one of them saves all the 
